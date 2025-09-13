@@ -1,7 +1,18 @@
-const Careers = () => {
+import { CareersHero } from "./components/careers-hero"
+import { CareersFeatures } from "./components/careers-features"
+import { CareersStory } from "./components/careers-story"
+import { CareersProcess } from "./components/careers-process"
+import { CareersForm } from "./components/careers-form"
+
+export default function Careers() {
   return (
-    <div>My Careers page</div>
+
+      <main>
+        <CareersHero />
+        <CareersFeatures />
+        <CareersStory />
+        <CareersProcess />
+        <CareersForm />
+      </main>
   )
 }
-
-export default Careers
