@@ -19,7 +19,7 @@ export function Features(props: {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 rounded-2xl p-10 border-2 border-[#EFF0F6]">
+        <div className="grid md:grid-cols-3 gap-10 rounded-2xl p-16 border-2 border-[#EFF0F6]">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}

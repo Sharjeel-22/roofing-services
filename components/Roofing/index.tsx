@@ -1,4 +1,5 @@
 import { Features } from "../features";
+import { RoofingStory } from "./components/roofing-story";
 import { features, roofingHeading, roofingParagraph } from "./constants";
 
 export default function Careers() {
@@ -9,7 +10,7 @@ export default function Careers() {
         heading={roofingHeading}
         paragraph={roofingParagraph}
       />
-
+      <RoofingStory />
     </main>
   )
 }
