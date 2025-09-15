@@ -1,7 +1,11 @@
+import AboutHeroSection from "./components/aboutus-hero-section"
 
 const AboutUs = () => {
   return (
-    <div>My AboutUs page</div>
+    <div>
+      <AboutHeroSection />
+      {/* Add other sections here as needed */}
+    </div>
   )
 }
 
