@@ -1,18 +1,21 @@
 import { CareersHero } from "./components/careers-hero"
-import { CareersFeatures } from "./components/careers-features"
+import { Features } from "../features"
 import { CareersStory } from "./components/careers-story"
 import { CareersProcess } from "./components/careers-process"
 import { CareersForm } from "./components/careers-form"
-
+import { careersHeading, careersParagraph, features } from "./constants"
 export default function Careers() {
   return (
-
-      <main>
-        <CareersHero />
-        <CareersFeatures />
-        <CareersStory />
-        <CareersProcess />
-        <CareersForm />
-      </main>
+    <main>
+      <CareersHero />
+      <Features
+        features={features}
+        heading={careersHeading}
+        paragraph={careersParagraph}
+      />
+      <CareersStory />
+      <CareersProcess />
+      <CareersForm />
+    </main>
   )
 }
