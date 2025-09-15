@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-export function RoofingFuture(props: any) {
+export function ImageOnTop(props: any) {
   const { title, description, buttonText, primaryImage, secondaryImage } =
     props;
   return (
