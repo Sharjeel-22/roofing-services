@@ -1,5 +1,6 @@
 "use client";
 import { HeadingDetails } from "@/components/HeadingDetails";
+import { ProvenCertified } from "../ProvenCertified";
 
 export function GutterReplacement() {
   return (
@@ -12,6 +13,7 @@ export function GutterReplacement() {
         onButtonClick={() => alert("Estimate button clicked!")}
         align="center"
       />
+      <ProvenCertified/>
     </main>
   );
 }

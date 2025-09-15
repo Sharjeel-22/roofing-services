@@ -1,5 +1,6 @@
 "use client";
 import { HeadingDetails } from "@/components/HeadingDetails";
+import { ProvenCertified } from "../ProvenCertified";
 
 export function DoorReplacement() {
   return (
@@ -12,6 +13,7 @@ export function DoorReplacement() {
         onButtonClick={() => alert("Estimate button clicked!")}
         align="center"
       />
+      <ProvenCertified/>
     </main>
   );
 }
