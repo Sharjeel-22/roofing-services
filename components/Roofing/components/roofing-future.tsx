@@ -6,7 +6,7 @@ export function RoofingFuture(props: any) {
     props;
   return (
     <main className="min-h-screen">
-      <div className="container mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-30">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Left Content */}
           <div className="space-y-8">
