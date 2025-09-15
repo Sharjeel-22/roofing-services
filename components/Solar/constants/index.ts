@@ -24,3 +24,21 @@ export const features: Feature[] = [
       image: "/redefine-whats-possible.svg",
     },
   ]
+
+    export const ProcessSteps = [
+    {
+      title: ". The World’s First Nailable Solar Shingle",
+      description:
+        "Timberline Solar™ is a breakthrough innovation — a solar shingle that nails on like a traditional roof shingle. The result? A strong, attractive roof that generates clean energy while protecting your home.",
+    },
+    {
+      title: "Save More on Electricity",
+      description:
+        "A Timberline Solar™ roof produces clean power at a cost lower than most utility rates. With government incentives and monthly energy savings, your investment can even pay for itself over time.",
+    },
+    {
+      title: "Built-In Protection",
+      description:
+        "Unlike traditional panels mounted on top of shingles, Timberline Solar™ integrates solar technology into durable roofing materials. This ensures superior water-shedding performance, lasting protection, and sleek curb appeal.",
+    },
+  ]
