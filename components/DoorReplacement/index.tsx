@@ -1,6 +1,8 @@
 "use client";
 import { HeadingDetails } from "@/components/HeadingDetails";
 import { ProvenCertified } from "../ProvenCertified";
+import { ServicesSection } from "../ServicesCards";
+import { doorServices } from "../constants";
 
 export function DoorReplacement() {
   return (
@@ -13,7 +15,11 @@ export function DoorReplacement() {
         onButtonClick={() => alert("Estimate button clicked!")}
         align="center"
       />
-      <ProvenCertified/>
+      <ServicesSection
+        heading="Door Replacement & Installation Services"
+        services={doorServices}
+      />
+      <ProvenCertified />
     </main>
   );
 }

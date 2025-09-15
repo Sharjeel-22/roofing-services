@@ -1,9 +1,12 @@
-import {DoorReplacement} from '@/components/DoorReplacement'
+import { DoorReplacement } from "@/components/DoorReplacement";
 
 const page = () => {
   return (
-    <DoorReplacement />
-  )
-}
+    <>
+      <DoorReplacement />
+    
+    </>
+  );
+};
 
-export default page
+export default page;
