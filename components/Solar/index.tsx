@@ -1,8 +1,15 @@
 import HeroSection from "@/components/hero-section";
 import { ImageOnTop } from "@/components/image-on-top";
 import { Features } from "@/components/features";
-import { features, roofingHeading, roofingParagraph } from "./constants";
+import {
+  features,
+  ProcessSteps,
+  roofingHeading,
+  roofingParagraph,
+} from "./constants";
 import TestimonialsSection from "@/components/testimonials-section";
+import { ThreeProcess } from "../three-process";
+import { SolarFAQ } from "./components/SolarFAQ";
 
 export default function Careers() {
   return (
@@ -26,7 +33,13 @@ export default function Careers() {
         heading={roofingHeading}
         paragraph={roofingParagraph}
       />
-      <TestimonialsSection/>
+      <ThreeProcess
+        title="Roofing + Solar, All in One"
+        description="Going solar has never been easier — or more beautiful. With Timberline Solar™ from GAF Energy, you get a durable roofing solution and an elegant solar system combined into one seamless installation, made right here in San Jose, California."
+        steps={ProcessSteps}
+      />
+      <SolarFAQ />
+      <TestimonialsSection />
     </main>
   );
 }
