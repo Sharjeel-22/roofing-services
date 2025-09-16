@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 
 const Estimate = () => {
@@ -230,13 +231,23 @@ const Estimate = () => {
                   </label>
                 </div>
 
+              <Link href="/payment">
+
                 <button
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-md transition-colors disabled:opacity-50"
-                >
+                 className="w-[235px] h-[40px] text-white font-semibold rounded-[20px] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    style={{
+                      background: 'linear-gradient(180deg, #4981C2 0%, #63CDF6 100%)',
+                      paddingTop: '8px',
+                      paddingRight: '30px',
+                      paddingBottom: '8px',
+                      paddingLeft: '30px',
+                      gap: '5px'
+                    }}>
                   {isSubmitting ? "Submitting..." : "Submit"}
                 </button>
+                </Link>
               </div>
             </div>
 
