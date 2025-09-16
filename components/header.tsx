@@ -14,7 +14,7 @@ export default function Header() {
     { href: "/roofing", label: "Roofing" },
     { href: "/solar", label: "Solar" },
     { href: "/careers", label: "Careers" },
-    { href: "/contact", label: "Contact" },
+    { href: "/contact-us", label: "Contact" },
   ]
 
   return (
