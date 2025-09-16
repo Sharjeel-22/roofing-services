@@ -2,8 +2,11 @@
 
 import React, { useState } from 'react';
 import { CheckCircle } from 'lucide-react';
+import { useRouter } from 'next/navigation'; // ✅ For Next.js 13+ App Router
 
 const Payment: React.FC = () => {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -23,7 +26,9 @@ const Payment: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Handle form submission here
+
+    // ✅ Redirect to payment-selection page
+    router.push('/payment-selection');
   };
 
   return (
@@ -72,7 +77,7 @@ const Payment: React.FC = () => {
         <div className="grid lg:grid-cols-3 gap-8 mt-12 lg:mt-16">
           {/* Form Section */}
           <div className="md:col-span-2">
-            <div className="bg-gray-50 p-6 lg:p-8 rounded-2xl">
+            <form onSubmit={handleSubmit} className="bg-gray-50 p-6 lg:p-8 rounded-2xl">
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
                 Payment Details
               </h2>
@@ -132,7 +137,7 @@ const Payment: React.FC = () => {
                       name="paymentAmount"
                       value={formData.paymentAmount}
                       onChange={handleInputChange}
-                      placeholder="Osama"
+                      placeholder="1000"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                     />
                   </div>
@@ -156,7 +161,7 @@ const Payment: React.FC = () => {
                 {/* Submit Button */}
                 <div className="flex justify-end">
                   <button
-                    onClick={handleSubmit}
+                    type="submit"
                     className="w-[235px] h-[40px] text-white font-semibold rounded-[20px] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     style={{
                       background: 'linear-gradient(180deg, #4981C2 0%, #63CDF6 100%)',
@@ -171,7 +176,7 @@ const Payment: React.FC = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
 
           {/* Image Section */}
