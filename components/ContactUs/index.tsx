@@ -232,13 +232,24 @@ const Contact = () => {
                   </label>
                 </div>
 
-                <button
-                  onClick={handleSubmit}
-                  disabled={isSubmitting}
-                  className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-md transition-colors disabled:opacity-50"
-                >
-                  {isSubmitting ? "Submitting..." : "Submit"}
-                </button>
+                <div className="flex justify-end">
+                  <button
+                    onClick={handleSubmit}
+                    disabled={isSubmitting}
+                    style={{
+                      background: 'linear-gradient(180deg, #4981C2 0%, #63CDF6 100%)',
+                      paddingTop: '8px',
+                      paddingRight: '30px',
+                      paddingBottom: '8px',
+                      paddingLeft: '30px',
+                      gap: '5px'
+                    }}
+                    className="hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-md transition-colors disabled:opacity-50"
+                  >
+                    {isSubmitting ? "Submitting..." : "Submit"}
+                  </button>
+                </div>
+
               </div>
             </div>
 
