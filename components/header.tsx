@@ -56,9 +56,12 @@ export default function Header() {
           </nav>
 
           {/* Call to Action */}
-          <Button className="text-white rounded-full h-[47px] w-[159px] px-[21px] py-[10px] bg-gradient-to-b from-[#4981C2] to-[#63CDF6] hover:opacity-90 transition-opacity">
+          <Link href="/estimate">
+          <Button 
+          className="text-white rounded-full h-[47px] w-[159px] px-[21px] py-[10px] bg-gradient-to-b from-[#4981C2] to-[#63CDF6] hover:opacity-90 transition-opacity">
             Get Estimate
           </Button>
+          </Link>
         </div>
       </div>
     </header>
